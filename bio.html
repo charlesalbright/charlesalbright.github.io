@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Biography · Charles Albright</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Libre+Caslon+Display&family=Literata:ital,opsz,wght@0,7..72,400;0,7..72,600;1,7..72,400&family=JetBrains+Mono:wght@400;500&display=swap">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="wrap">
+  <div class="topbar">
+    <a class="home" href="./">Charles Albright</a>
+    <nav aria-label="Site"><a href="./">Home</a><a href="bio.html" aria-current="page">Biography</a><a href="research.html">Research</a><a href="teaching.html">Teaching &amp; Tutoring</a><a href="education.html">Education</a><a href="coursework.html">Coursework</a><a href="service.html">Service &amp; Honors</a><a href="record.html">World Record</a></nav>
+  </div>
+  <div class="pagehead">
+    <h1>Biography</h1>
+    <p>Background, education and research in brief</p>
+  </div>
+
+  <section class="solo" id="bio">
+    <h2>Biography</h2>
+    <div class="body">
+      <div class="biogrid">
+        <figure class="portrait">
+          <img src="photo.jpg" alt="Charles Albright" id="portrait-img">
+          <div class="mono" hidden><span>CA</span><small>Add photo.jpg</small></div>
+        </figure>
+        <script>
+          (function () {
+            var img = document.getElementById('portrait-img');
+            function fallback() { img.hidden = true; img.nextElementSibling.hidden = false; }
+            if (img.complete && !img.naturalWidth) fallback(); else img.addEventListener('error', fallback);
+          })();
+        </script>
+        <div class="lede">
+          <p>Charles Albright is a Professor of Mathematics at Sierra College in Rocklin, California, where he has taught full time since 2015. He has taught mathematics in the Sacramento region since 2008: first as a teaching associate and then a lecturer at Sacramento State, as an adjunct professor at Cosumnes River College from 2010 to 2015, and as a teaching assistant in logic and philosophy of science at UC Davis. His courses run from arithmetic and elementary algebra through calculus, differential equations and linear algebra.</p>
+          <p>He holds bachelor's degrees in philosophy (2000) and mathematics (2008) and a master's in mathematics (2011) from Sacramento State, a master's in philosophy from UC Davis (2021), and a master's in computational engineering from Mississippi State University (2026). Alongside these he has earned 35 associate degrees from five Sacramento-area community colleges, for 40 degrees in all, and is working toward recognition for the most college degrees held by one person.</p>
+          <p>His research is in the foundations of mathematics: category theory, rebuilding the real number system constructively and bringing infinity into constructive foundations, reverse mathematics and inconsistent mathematics. He also studies mathematical methodology: how research mathematicians write and check proofs, how far they understand AI-assisted proofs, and how errors in published proofs go unnoticed. His current papers argue that 0<sup>0</sup> = 1, develop a general theory of closed forms, and examine Patrick Grim's argument against a set of all truths. He has given talks since 2008 on finite topologies, the fundamental theorem of arithmetic and the real number system.</p>
+          <p>At Sierra College he serves on the tenure evaluation, sabbatical and mathematics scholarship committees. He was elected to Pi Mu Epsilon in 2008, received Sacramento State's Voula Steinberg awards for teaching promise and outstanding mathematics, and served as president of the CSUS Mathematical Society. He has tutored mathematics since 1995.</p>
+          <p>Charles spent his childhood in Baltimore, Maryland, and has lived most of his life in Sacramento. Outside the classroom he is a father, a local musician and music historian, and an amateur powerlifter.</p>
+        </div>
+      </div>
+      <div class="shortbio">
+        <h3>Short bio</h3>
+        <p>Charles Albright is a Professor of Mathematics at Sierra College in Rocklin, California. He holds master's degrees in mathematics, philosophy and computational engineering, along with 37 other degrees, and works on the foundations of mathematics, including category theory, constructive mathematics, and reverse and inconsistent mathematics.</p>
+      </div>
+    </div>
+  </section>
+
+  <footer>Last updated October 2026</footer>
+</div>
+</body>
+</html>
